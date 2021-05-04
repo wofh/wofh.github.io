@@ -1,0 +1,532 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,700&display=swap');
+
+:root{
+    --color-subject:  rgb(0, 0, 151);
+    --color-class: rgb(187, 18, 51);
+    --color-dark-gray: rgb(126,126,126);
+    --color-light-gray: rgb(233, 233, 233);
+}
+
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header 
+{
+    background:  rgb(0,0,0,0.5);
+    color: white;
+}
+
+.banner
+{
+    margin-left: 7em;
+    margin-right:13em;
+    height: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.school-logo
+{
+    width: 7em;
+    height: 7em;
+}
+
+nav
+{
+  align-items: center;
+  align-content: center;
+}
+
+h1
+{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 800;
+    font-size: 50px;
+    font-family: 'Open Sans';
+}
+
+h2{
+    padding: 1em;
+    color: var(--color-subject)
+}
+
+h3{
+    padding: 1em;
+    color: var(--color-class)
+}
+
+a 
+{
+    text-decoration: none;
+}
+
+p{
+  font-family: 'Open Sans';
+}
+
+a:link, a:visited 
+{
+    color: var(--color-class);
+}
+
+a:hover 
+{
+    color: var(--color-subject);
+}
+
+#address{
+    color: white;
+}
+
+#address:hover{
+    color: black;
+}
+
+.buttons
+{
+    width: 100vmax;
+}
+
+.fixed-nav nav
+{
+    position: fixed;
+}
+
+nav {
+    background: var(--color-dark-gray);
+    top: 0;
+    width: 100%;
+    transition: all 0.5s;
+    position: relative;
+    z-index: 1;
+}
+
+button
+{
+    background-color: rgb(0,0,0,0);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+button:hover
+{
+    background-color: rgb(0,0,0,0.25);
+    cursor: pointer;
+}
+
+.foot
+{
+    background: var(--color-dark-gray);
+    color: white;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1em;
+    padding: 1em;
+}
+
+.footelement
+{
+    margin: 0.125em;
+}
+
+body
+{
+    font-family: 'Open Sans';
+    background:var(--color-light-gray);
+    background-image: linear-gradient(to right, white , red, blue);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+.main
+{
+    display: grid;
+    grid-template-columns: 26% 74%;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 1.1em;
+}
+
+.side-bar
+{
+    background:var(--color-light-gray);
+    padding: 2em;
+    height: 100%;    
+}
+
+.content
+{
+    background: white;
+    padding: 1.25em;
+    font-size: 1.1rem;
+}
+
+.home-content{
+    background-image: url(images/walton-building-1-40.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    margin-left: 10em;   
+    margin-right: 10em;
+}
+
+.subject{
+    font-size: 1.25rem;
+    padding: 0.5em;
+    color: var(--color-subject);
+}
+
+.classes{
+    padding: 0.25em;
+    color: var(--color-class);
+}
+
+.teacher{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin: 1em;
+}
+
+.profile{
+    width: 7em;
+    height: 7em;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.name{
+    font-size: 2rem;
+}
+
+.home-btn {
+    color: var(--color-dark-gray);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+
+.home-btn:hover
+  {
+      color: rgb(255, 255, 255);
+      background: rgb(70, 70, 70);
+    }
+
+/* Dropdown Button */
+.bavp-btn {
+    color: var(--color-dark-gray);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .bavp-drpdwn {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .bavp-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 16.3em;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .bavp-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .bavp-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .bavp-drpdwn:hover .bavp-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .bavp-drpdwn:hover .bavp-btn 
+  {
+      color: rgb(255, 255, 255);
+      background: rgb(70, 70, 70);
+    }
+
+
+
+
+
+
+/* Dropdown Button */
+.cs-btn {
+    color: var(--color-dark-gray);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .cs-drpdwn {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .cs-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 16.3em;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .cs-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .cs-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .cs-drpdwn:hover .cs-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .cs-drpdwn:hover .cs-btn 
+  {
+      color: rgb(255, 255, 255);
+      background: rgb(70, 70, 70);
+    }
+
+
+
+
+    
+
+/* Dropdown Button */
+.eng-btn {
+    color: var(--color-dark-gray);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .eng-drpdwn {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .eng-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 16.3em;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .eng-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .eng-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .eng-drpdwn:hover .eng-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .eng-drpdwn:hover .eng-btn 
+  {
+      color: rgb(255, 255, 255);
+      background: rgb(70, 70, 70);
+    }
+    
+
+
+
+    
+
+/* Dropdown Button */
+.gcad-btn {
+    color: var(--color-dark-gray);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .gcad-drpdwn {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .gcad-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 20em;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .gcad-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .gcad-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .gcad-drpdwn:hover .gcad-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .gcad-drpdwn:hover .gcad-btn 
+  {
+      color: rgb(255, 255, 255);
+      background: rgb(70, 70, 70);
+    }
+    
+
+
+
+    
+
+/* Dropdown Button */
+.pm-btn {
+    color: var(--color-dark-gray);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .pm-drpdwn {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .pm-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 16.3em;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .pm-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .pm-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .pm-drpdwn:hover .pm-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .pm-drpdwn:hover .pm-btn 
+  {
+      color: rgb(255, 255, 255);
+      background: rgb(70, 70, 70);
+    }
+    
+
+
+
+    
+
+/* Dropdown Button */
+.baf-btn {
+    color: var(--color-dark-gray);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .baf-drpdwn {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .baf-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 16.3em;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .baf-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .baf-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .baf-drpdwn:hover .baf-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .baf-drpdwn:hover .baf-btn 
+  {
+      color: rgb(255, 255, 255);
+      background: rgb(70, 70, 70);
+    }
