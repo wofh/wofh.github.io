@@ -8,8 +8,7 @@
     --color-light-gray: rgb(233, 233, 233);
 }
 
-*
-{
+*{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -19,22 +18,31 @@ header
 {
     background:  rgb(0,0,0,0.5);
     color: white;
+    
 }
 
+#top
+{
+  background-image: url(images/walton-building-2-crop.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}
 .banner
 {
-    margin-left: 7em;
-    margin-right:13em;
+  background-color: rgba(255, 255, 255, 0.253);
     height: 10em;
     display: flex;
+    background-repeat: no-repeat;
     justify-content: center;
     align-items: center;
+    background-size: cover;
 }
 
 .school-logo
 {
-    width: 7em;
-    height: 7em;
+    width: 6em;
+    height: 6em;
+    margin-left: 5em;
 }
 
 nav
@@ -49,7 +57,7 @@ h1
     margin-left: auto;
     margin-right: auto;
     font-weight: 800;
-    font-size: 50px;
+    font-size: 40px;
     font-family: 'Open Sans';
 }
 
@@ -97,11 +105,13 @@ a:hover
 
 .fixed-nav nav
 {
+  background-color: rgb(0, 0, 0);
+
     position: fixed;
 }
 
 nav {
-    background: var(--color-dark-gray);
+    background: rgba(90, 90, 90, 0.397);
     top: 0;
     width: 100%;
     transition: all 0.5s;
@@ -147,9 +157,9 @@ button:hover
 
 body
 {
+  background-image: linear-gradient(to right, gray, rgb(206, 22, 22), rgba(49, 97, 255), gray);
+
     font-family: 'Open Sans';
-    background:var(--color-light-gray);
-    background-image: linear-gradient(to right, white , red, blue);
     background-repeat: no-repeat;
     background-size: cover;
    
@@ -179,9 +189,11 @@ body
 }
 
 .home-content{
-    background-image: url(images/walton-building-1-40.jpg);
+  background:var(--color-light-gray);
+
     background-repeat: no-repeat;
     background-size: cover; 
+  
     margin-left: 10em;   
     margin-right: 10em;
 }
